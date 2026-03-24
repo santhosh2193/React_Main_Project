@@ -1,0 +1,64 @@
+.placeorder-page {
+  max-width: 800px;
+  margin: 80px auto; /* space below header */
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+/* Title */
+.placeorder-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #198754; /* Bootstrap green */
+  margin-bottom: 10px;
+}
+
+/* Message */
+.placeorder-message {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Actions (buttons) */
+.placeorder-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.continue-shopping,
+.view-cart {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+/* Continue shopping button */
+.continue-shopping {
+  background: #0d6efd; /* Bootstrap blue */
+  color: #fff;
+}
+
+.continue-shopping:hover {
+  background: #0b5ed7;
+}
+
+/* View cart button */
+.view-cart {
+  background: #198754; /* Bootstrap green */
+  color: #fff;
+}
+
+.view-cart:hover {
+  background: #157347;
+}

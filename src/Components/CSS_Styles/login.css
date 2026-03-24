@@ -1,0 +1,71 @@
+/* Parent container centers the login form */
+.Parent_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: auto;          /* avoid double 100vh stacking */
+  background: linear-gradient(135deg, #f0f2f5, #e6ebf0);
+  padding: 20px;
+}
+
+/* Keep content vertically centered in available space in app wrapper */
+.Main > .Parent_login {
+  min-height: calc(100vh - 60px); /* adjust for navbar if present */
+}
+
+
+/* Login form box */
+.Parent_login form {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 280px;           /* compact width */
+  min-height: auto;               /* natural height */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;                  /* spacing between inputs and button */
+}
+
+/* Labels */
+.Parent_login label {
+  font-weight: 600;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Inputs */
+.Parent_login input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.Parent_login input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0,123,255,0.3);
+}
+
+/* Button */
+.Parent_login button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #000000, #333333);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Parent_login button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}

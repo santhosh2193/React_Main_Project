@@ -1,0 +1,33 @@
+.app-root>*:not(.no-style){
+    margin: 0;
+}
+
+.Main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Main>.navbar {
+    width: 100%;
+    height: auto;
+}
+
+.Main>*:not(.navbar):not(.no-style){
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    flex: 1;
+    min-height: auto;
+    padding: 20px 0;
+}
+
+body {
+  margin: 0;
+  background: #f5f6fa;
+  color: #212529;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+

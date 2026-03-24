@@ -1,0 +1,83 @@
+/* Parent container centers the register form */
+
+
+/* Parent container places form at the top */
+.Parent_register {
+  display: flex;
+  justify-content: center;   /* keep horizontally centered */
+  align-items: flex-start;   /* push to top */
+  background: linear-gradient(135deg, #f0f2f5, #e6ebf0);
+  padding: 40px 20px;        /* spacing from top edge */
+  min-height: auto;          /* remove forced full height */
+}
+
+/* Register form box */
+.Parent_register form {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 280px;          /* compact width */
+  height: auto;              /* natural height */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;                 /* spacing between inputs and button */
+}
+
+
+/* Labels */
+.Parent_register label {
+  font-weight: 600;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Inputs */
+.Parent_register input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.Parent_register input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0,123,255,0.3);
+}
+
+/* Button */
+.Parent_register button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #000000, #333333);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Parent_register button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Feedback messages */
+.Parent_register p {
+  font-size: 12px;
+  margin: 6px 0;
+  text-align: center;
+  color: #555;
+}
+
+/* Error message */
+.Parent_register p[style] {
+  font-weight: 600;
+  color: red !important;
+}
