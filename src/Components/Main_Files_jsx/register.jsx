@@ -11,7 +11,7 @@ function Register() {
     let onHandleRegister = async (event)=>{
         event.preventDefault()
 
-        let data = await fetch(`https://react-main-project-1.onrender.com/users?email=${email}`)
+        let data = await fetch(`${import.meta.env.VITE_API_URL}/users?email=${email}`)
         let res_data = await data.json()
         if (res_data.length>0){
             setErr(true)

@@ -14,7 +14,7 @@ function Login() {
             event.preventDefault()
             try {
               
-              let data = await fetch(`https://react-main-project-1.onrender.com/users?email=${email}`,{
+              let data = await fetch(`${import.meta.env.VITE_API_URL}/users?email=${email}`,{
                 method:"GET"
               })
               let res = await data.json()
