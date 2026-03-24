@@ -14,7 +14,7 @@ function Login() {
             event.preventDefault()
             try {
               
-              let data = await fetch(`http://localhost:4000/users?email=${email}`,{
+              let data = await fetch(`https://react-main-project-1.onrender.com/users?email=${email}`,{
                 method:"GET"
               })
               let res = await data.json()

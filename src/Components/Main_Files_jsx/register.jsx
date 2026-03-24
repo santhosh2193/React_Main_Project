@@ -11,7 +11,7 @@ function Register() {
     let onHandleRegister = async (event)=>{
         event.preventDefault()
 
-        let data = await fetch(`http://localhost:4000/users?email=${email}`)
+        let data = await fetch(`https://react-main-project-1.onrender.com/users?email=${email}`)
         let res_data = await data.json()
         if (res_data.length>0){
             setErr(true)
@@ -20,7 +20,7 @@ function Register() {
                 const userDetails = {username,email,password}
 
                 try {
-                    let res = await fetch("http://localhost:4000/users",{
+                    let res = await fetch("https://react-main-project-1.onrender.com/users",{
                     method:"POST",
                     headers:{
                         "Content-Type":"application/json"
